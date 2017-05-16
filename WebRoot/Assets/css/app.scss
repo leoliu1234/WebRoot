@@ -1,0 +1,118 @@
+$main-width: 60em;
+body {
+    background: #F1F1F1;
+}
+
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+#layout {
+    position: relative;
+    padding-left: 0;
+}
+
+#menu {
+    margin-left: -160px;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    .pure-menu-heading {
+        font-size: 125%;
+        font-weight: 300;
+        letter-spacing: .1em;
+        color: #fff;
+        margin-top: 0;
+        padding: .5em .8em;
+        text-transform: uppercase;
+    }
+    .pure-menu {
+        .menu-item-divided,
+        ul {
+            border-top: 1px solid #333;
+        }
+        li a:focus,
+        li a:hover {
+            background: #333;
+        }
+    }
+    a {
+        color: #999;
+        border: none;
+        white-space: normal;
+        padding: .625em 1em;
+    }
+}
+
+@media (min-width: 58em) {
+    #menu {
+        left: 160px;
+    }
+    #layout {
+        padding-left: 160px;
+        left: 0;
+    }
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: $main-width;
+}
+
+.header {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: $main-width;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    letter-spacing: 0.05em;
+}
+
+.footer {
+    font-size: 87.5%;
+    border-top: 1px solid #eee;
+    margin-top: 3.4286em;
+    padding: 1.1429em;
+    text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+    .header,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+.image-details {
+    margin-bottom: 2em;
+    text-align: center;
+    img {
+        width: 8em;
+        height: 6em;
+    }
+}
+
+.favorite {
+    .big-image {
+        img {
+            width: 100%;
+        }
+    }
+}
