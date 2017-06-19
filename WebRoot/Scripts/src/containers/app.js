@@ -10,12 +10,10 @@ class App extends React.Component {
     render() {
         const {increment, counter, decrement, getThenShow} = this.props;
         return (
-            <div>{counter}
-                <a href="#" onClick={increment.bind(this, 2)}>Increment</a><br/>
-                <a href="#" onClick={decrement.bind(this, 1)}>Decrement</a><br/>
-                <div>leo</div>
-                <a href="#" onClick={getThenShow.bind(this, 1)}>test</a><br/>
-                <div>leo 44444444444444</div>
+            <div id="main">
+                <div className="content">
+                    <img src="/Assets/images/src_1.jpg"/>
+                </div>
             </div>
         );
     }

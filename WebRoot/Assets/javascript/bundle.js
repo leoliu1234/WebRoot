@@ -17570,35 +17570,11 @@
 	
 	            return _react2.default.createElement(
 	                'div',
-	                null,
-	                counter,
-	                _react2.default.createElement(
-	                    'a',
-	                    { href: '#', onClick: increment.bind(this, 2) },
-	                    'Increment'
-	                ),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(
-	                    'a',
-	                    { href: '#', onClick: decrement.bind(this, 1) },
-	                    'Decrement'
-	                ),
-	                _react2.default.createElement('br', null),
+	                { id: 'main' },
 	                _react2.default.createElement(
 	                    'div',
-	                    null,
-	                    'leo'
-	                ),
-	                _react2.default.createElement(
-	                    'a',
-	                    { href: '#', onClick: getThenShow.bind(this, 1) },
-	                    'test'
-	                ),
-	                _react2.default.createElement('br', null),
-	                _react2.default.createElement(
-	                    'div',
-	                    null,
-	                    'leo 44444444444444'
+	                    { className: 'content' },
+	                    _react2.default.createElement('img', { src: '/Assets/images/src_1.jpg' })
 	                )
 	            );
 	        }
